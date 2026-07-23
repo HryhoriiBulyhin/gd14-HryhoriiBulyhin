@@ -4,15 +4,15 @@
 <br />
 <div align="center">
 
-  <h2 align="center">NAME OF CHOSEN GAME</h2>
+  <h2 align="center">Hotline Miami - The Metro (Prologue)</h2>
 
   <p align="center">
     Short description of the game.
     <br />
     <strong>Original game : </strong>
-    <a href="https://www.google.be/"><strong>General info »</strong></a>
+    <a href="https://en.wikipedia.org/wiki/Hotline_Miami"><strong>General info »</strong></a>
     ·
-    <a href="https://www.google.be/"><strong>Youtube video »<strong></a>
+    <a href="https://www.youtube.com/watch?v=fJlvMHFsrr4&list=PLTaOHX8kEkD6q6_bo9MwwS0NfwBTu_0Vi&index=1"><strong>Youtube video »</strong></a>
     <br />
     <br />
   </p>
@@ -46,12 +46,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-TODO: add screenshot 
+[Hotline_Miami_screenshot]<img width="1394" height="787" alt="Hotline_Miami_screenshot" src="https://github.com/user-attachments/assets/3cb20b3b-cfe8-4e7c-8471-9ffb3fee6ed8" />
+
+
 
 Here's why:
 TODO: describe why you chose this game 
-* reason 1
-* reason .. 
+* reason 1 I chose this game because it looked very interesting to me.
+* reason 2 The NPC enemies and their behaviour make the gameplay exciting.
+* reason 3 I also like the camera movement and the top-down view of the game.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,18 +62,32 @@ TODO: describe why you chose this game
 ## My version
 
 This section gives a clear and detailed overview of which parts of the original game I planned to make.
+I am going to recreate a part of the level "The Metro (Prologue)" from Hotline Miami.
+The player controls a character from a top-down view and fights with enemies inside a building.
+The goal is to kill enemies while navigating through rooms and obstacles.
 
 ### The minimum I will most certainly develop:
-* .. 
-* .. 
-
+* Player movement with a top-down camera
+* Basic combat mechanics
+* NPC enemies
+* Different weapon types(at least: bat, knife)
+* Level layout with walls and obstacles
+* Pickable weapons
+  
 ### What I will probably make as well:
-* .. 
-* .. 
+* Different types of enemies with different behaviour
+*  I will add simple score popups when enemies are defeated
+*  I will implement basic blood effects when enemies are hit (not on the floor)
 
 ### What I plan to create if I have enough time left:
-* .. 
-* .. 
+* Additional enemy types
+* Start menu
+* Ranged weapon(pistol)
+* Blood effects on the floor
+* The player will be able to throw weapons
+### Interaction:
+* The player will be able to pick up gun from the ground
+* The player will be able to finish off npc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,9 +103,8 @@ This is an example of how to list things you need to use the software and how to
 
 ### How to run the project
 
-Explain which project (version) must be run.
-* any extra steps if required 
-
+In Visual Studio 2022 and run the project in Debug or Release mode.
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -96,12 +112,14 @@ Explain which project (version) must be run.
 <!-- HOW TO PLAY -->
 ## How to play
 
-Use this space to show useful examples of how a game can be played. 
-Additional screenshots and demos work well in this space. 
+Use the mouse to point and move in one direction or another.
 
 ### Controls
-* keys, .. 
-* .. 
+* W, A, S, D - Move the player
+* RMB - Attack
+* E - Pick up a weapon
+* Space - Perform a finisher off on stunned enemy
+* R - Restart Current Level
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,12 +129,10 @@ Additional screenshots and demos work well in this space.
 ## Class structure 
 
 ### Object composition 
-If you applied object composition (optional); explain where and how.
+Game class owns and manages the main gameplay components "player,level,mouse cursor, resource manager, sound manage and level editor". The level class contains collections of world objects doors, waypoints, collision. Classes Player, Enemy, Door and Car contain pointers to other objects like textures, resource manager, sound manager and level itself.
 
 ### Inheritance 
-Explain where you applied inheritance (mandatory).
-
-### ..
+The character class is a base class for both Player and Enemy. It provides shared properties such as position... Derived classes implement their own gameplay logic. Enemy class is further extended by BriefcaseEnemy, which overrides virtual functions to provide unique behavior. It's also used through the abstract class WorldObject base class. Classes Door, Car, DroppedItem, Sign iherit from WorldObject and implement their own behavior.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,9 +160,9 @@ Explain where you applied inheritance (mandatory).
 <!-- CONTACT -->
 ## Contact
 
-Your Name - email@student.howest.be
+Hryhorii Bulyhin - hryhorii.bulyhin@student.howest.be
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [gd14-HryhoriiBulyhin](https://github.com/HowestDAE/gd14-HryhoriiBulyhin.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +173,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 Use this space to list resources you find helpful and would like to give credit to. 
 
 * [Example 1: cpp reference on std::vector](https://en.cppreference.com/w/cpp/container/vector)
-* ..
+* [SpriteSheet](https://www.dropbox.com/scl/fo/5h1i7fbnz9oc0gd86meaa/AOcQZMcmvk4GHjQppr6SEag?rlkey=ljao663e3smhpqvz5fmtixdrv&e=2&dl=0)
+* [Lab07]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
