@@ -1,4 +1,8 @@
 #pragma once
+
+//Json parser library Include - https://sourceforge.net/projects/json-for-modern-c.mirror/files/v3.11.1/json.hpp/download
+#include "../Libraries/Json/json.hpp"
+
 //ML Detection Extension
 #ifdef _DEBUG
 #define _CRTDBG_MAP_ALLOC
