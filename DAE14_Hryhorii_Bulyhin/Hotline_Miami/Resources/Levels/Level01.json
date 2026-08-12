@@ -1,0 +1,584 @@
+{
+  "objects": [
+    {
+      "prog2GameObjects": [
+        {
+          "texturePath": "firstLevel.png",
+          "renderLayer": 0,
+          "xPosition": -0.02,
+          "yPosition": -0.12,
+          "spriteFrames": [
+            {
+              "name": "firstLevel",
+              "x": 0.0,
+              "y": 0.0,
+              "width": 1536.0,
+              "height": 1152.0
+            }
+          ]
+        },
+        {
+          "xPosition": -2.5369997,
+          "yPosition": -1.30799985,
+          "prog2Rectf": {
+            "left": -0.4000001,
+            "bottom": -1.85000014,
+            "width": 0.8000002,
+            "height": 3.70000029
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -5.32,
+          "yPosition": 0.8399999,
+          "prog2Rectf": {
+            "left": -1.4000001,
+            "bottom": -3.95,
+            "width": 2.80000019,
+            "height": 7.9
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -3.31999969,
+          "yPosition": 4.67,
+          "prog2Rectf": {
+            "left": -0.5999999,
+            "bottom": -0.07499981,
+            "width": 1.19999981,
+            "height": 0.149999619
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -3.4369998,
+          "yPosition": -3.07200027,
+          "prog2Rectf": {
+            "left": -0.5,
+            "bottom": -0.07500005,
+            "width": 1.0,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 2.094,
+          "yPosition": 4.097,
+          "prog2Rectf": {
+            "left": -0.75,
+            "bottom": -0.07499981,
+            "width": 1.5,
+            "height": 0.149999619
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -1.77899992,
+          "yPosition": -2.201,
+          "prog2Rectf": {
+            "left": -0.49999994,
+            "bottom": -0.950000048,
+            "width": 0.9999999,
+            "height": 1.9000001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -2.54999971,
+          "yPosition": 3.074,
+          "prog2Rectf": {
+            "left": -0.25,
+            "bottom": -1.5,
+            "width": 0.5,
+            "height": 3.0
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 1.954,
+          "yPosition": -2.15799975,
+          "prog2Rectf": {
+            "left": -0.974999964,
+            "bottom": -0.950000048,
+            "width": 1.94999993,
+            "height": 1.9000001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 1.14,
+          "yPosition": -1.27399993,
+          "prog2Rectf": {
+            "left": -0.975,
+            "bottom": -0.07500005,
+            "width": 1.95,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 2.418,
+          "yPosition": -0.350000143,
+          "prog2Rectf": {
+            "left": -0.3499999,
+            "bottom": -1.0,
+            "width": 0.6999998,
+            "height": 2.0
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 4.921,
+          "yPosition": -3.04600024,
+          "prog2Rectf": {
+            "left": -2.0,
+            "bottom": -0.07500005,
+            "width": 4.0,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 5.4,
+          "yPosition": 0.850000143,
+          "prog2Rectf": {
+            "left": -1.54999983,
+            "bottom": -3.85,
+            "width": 3.09999967,
+            "height": 7.7
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 3.37,
+          "yPosition": 4.675,
+          "prog2Rectf": {
+            "left": -0.5,
+            "bottom": -0.07499981,
+            "width": 1.0,
+            "height": 0.149999619
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 2.86600018,
+          "yPosition": 3.151,
+          "prog2Rectf": {
+            "left": -0.0999999046,
+            "bottom": -1.5,
+            "width": 0.199999809,
+            "height": 3.0
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 1.246,
+          "yPosition": 2.882,
+          "prog2Rectf": {
+            "left": -0.100000024,
+            "bottom": -1.30000007,
+            "width": 0.200000048,
+            "height": 2.60000014
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 1.029,
+          "yPosition": 2.286,
+          "prog2Rectf": {
+            "left": -0.200000018,
+            "bottom": -0.349999964,
+            "width": 0.400000036,
+            "height": 0.6999999
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 0.461,
+          "yPosition": 1.651,
+          "prog2Rectf": {
+            "left": -0.85,
+            "bottom": -0.07500005,
+            "width": 1.7,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -2.02299976,
+          "yPosition": 1.64600015,
+          "prog2Rectf": {
+            "left": -0.799999952,
+            "bottom": -0.07500005,
+            "width": 1.5999999,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 0.06099999,
+          "yPosition": 3.814,
+          "prog2Rectf": {
+            "left": -0.075,
+            "bottom": -0.250000119,
+            "width": 0.15,
+            "height": 0.500000238
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 0.66,
+          "yPosition": 2.884,
+          "prog2Rectf": {
+            "left": -0.65,
+            "bottom": -0.07500005,
+            "width": 1.3,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 0.676,
+          "yPosition": 3.86,
+          "prog2Rectf": {
+            "left": -0.149999976,
+            "bottom": -0.200000048,
+            "width": 0.299999952,
+            "height": 0.4000001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -1.268,
+          "yPosition": -1.282,
+          "prog2Rectf": {
+            "left": -0.6,
+            "bottom": -0.07500005,
+            "width": 1.2,
+            "height": 0.1500001
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.711,
+          "yPosition": 4.113,
+          "prog2Rectf": {
+            "left": -2.0,
+            "bottom": -0.07499981,
+            "width": 4.0,
+            "height": 0.149999619
+          },
+          "isTrigger": false,
+          "objectType": "Collision",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.17,
+          "yPosition": -3.02,
+          "objectType": "PlayerSpawn",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.179999992,
+          "yPosition": -4.21,
+          "objectType": "Car",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.202,
+          "yPosition": -0.9590001,
+          "prog2Rectf": {
+            "left": 0.0,
+            "bottom": 0.0,
+            "width": 0.0,
+            "height": 0.0
+          },
+          "isTrigger": false,
+          "objectType": "Enemy",
+          "subType": "Door",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -1.91,
+          "yPosition": 2.93,
+          "prog2Rectf": {
+            "left": 0.0,
+            "bottom": 0.0,
+            "width": 0.0,
+            "height": 0.0
+          },
+          "isTrigger": false,
+          "objectType": "Enemy",
+          "subType": "Toilet",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": 2.075,
+          "yPosition": 3.597,
+          "prog2Rectf": {
+            "left": -0.75,
+            "bottom": -0.5000001,
+            "width": 1.5,
+            "height": 1.00000024
+          },
+          "isTrigger": true,
+          "objectType": "LevelExit",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.249999985,
+          "yPosition": -1.30800009,
+          "prog2Rectf": {
+            "left": -0.4,
+            "bottom": -0.0349999666,
+            "width": 0.8,
+            "height": 0.06999993
+          },
+          "isTrigger": false,
+          "objectType": "Door",
+          "subType": "Horizontal",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.821,
+          "yPosition": 1.638,
+          "prog2Rectf": {
+            "left": -0.399999976,
+            "bottom": -0.0349999666,
+            "width": 0.799999952,
+            "height": 0.06999993
+          },
+          "isTrigger": false,
+          "objectType": "Door",
+          "subType": "Horizontal",
+          "groupId": 0,
+          "index": 1,
+          "neighbours": []
+        },
+        {
+          "xPosition": 0.126,
+          "yPosition": 3.258,
+          "prog2Rectf": {
+            "left": -0.0349999964,
+            "bottom": -0.299999952,
+            "width": 0.06999999,
+            "height": 0.5999999
+          },
+          "isTrigger": false,
+          "objectType": "Door",
+          "subType": "Vertical",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        },
+        {
+          "xPosition": -0.762,
+          "yPosition": 1.065,
+          "objectType": "Waypoint",
+          "subType": "",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "xPosition": -3.374,
+          "yPosition": 1.065,
+          "objectType": "Waypoint",
+          "subType": "",
+          "groupId": 0,
+          "index": 1,
+          "neighbours": [
+            0
+          ]
+        },
+        {
+          "xPosition": 3.38499975,
+          "yPosition": 1.065,
+          "objectType": "Waypoint",
+          "subType": "",
+          "groupId": 0,
+          "index": 2,
+          "neighbours": [
+            0
+          ]
+        },
+        {
+          "xPosition": -0.762,
+          "yPosition": 2.332,
+          "objectType": "Waypoint",
+          "subType": "",
+          "groupId": 0,
+          "index": 3,
+          "neighbours": [
+            0,
+            4
+          ]
+        },
+        {
+          "xPosition": -0.762,
+          "yPosition": 3.194,
+          "objectType": "Waypoint",
+          "subType": "",
+          "groupId": 0,
+          "index": 4,
+          "neighbours": [
+            3,
+            5
+          ]
+        },
+        {
+          "xPosition": 0.514,
+          "yPosition": 3.194,
+          "objectType": "Waypoint",
+          "subType": "",
+          "groupId": 0,
+          "index": 5,
+          "neighbours": [
+            4
+          ]
+        },
+        {
+          "xPosition": 1.988,
+          "yPosition": 2.306,
+          "objectType": "Sign",
+          "subType": "LevelExit",
+          "groupId": 0,
+          "index": 0,
+          "neighbours": []
+        }
+      ]
+    }
+  ]
+}

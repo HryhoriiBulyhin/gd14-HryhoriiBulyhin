@@ -1,0 +1,351 @@
+{
+  "enemy": {
+    "presets": [
+      {
+        "id": "Unarmed",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprEWalkUnarmed_strip8.png",
+          "frames": [
+            {
+              "name": "sprEWalkUnarmed_strip8_0",
+              "x": -13.0,
+              "y": -7.5,
+              "width": 26.0,
+              "height": 15.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_1",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_2",
+              "x": -9.0,
+              "y": -12.0,
+              "width": 18.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_3",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_4",
+              "x": -7.5,
+              "y": -13.0,
+              "width": 15.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_5",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_6",
+              "x": -9.0,
+              "y": -12.0,
+              "width": 18.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprEWalkUnarmed_strip8_7",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            }
+          ]
+        },
+        "attack": null
+      },
+      {
+        "id": "Bat",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprEWalkBat_strip8.png",
+          "frames": [
+            {
+              "name": "sprEWalkBat_strip8_0",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_1",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_2",
+              "x": -10.0,
+              "y": -15.0,
+              "width": 20.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_3",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_4",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_5",
+              "x": -8.0,
+              "y": -15.0,
+              "width": 16.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_6",
+              "x": -8.5,
+              "y": -15.0,
+              "width": 17.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEWalkBat_strip8_7",
+              "x": -8.0,
+              "y": -15.0,
+              "width": 16.0,
+              "height": 30.0
+            }
+          ]
+        },
+        "attack": {
+          "texturePath": "Entity/Enemy/sprEAttackBat_strip9.png",
+          "frames": [
+            {
+              "name": "sprEAttackBat_strip9_0",
+              "x": -9.5,
+              "y": -15.5,
+              "width": 19.0,
+              "height": 31.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_1",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_2",
+              "x": -12.0,
+              "y": -10.0,
+              "width": 24.0,
+              "height": 20.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_3",
+              "x": -12.0,
+              "y": -10.0,
+              "width": 24.0,
+              "height": 20.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_4",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_5",
+              "x": -17.5,
+              "y": -12.5,
+              "width": 35.0,
+              "height": 25.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_6",
+              "x": -17.0,
+              "y": -15.0,
+              "width": 34.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_7",
+              "x": -12.5,
+              "y": -16.0,
+              "width": 25.0,
+              "height": 32.0
+            },
+            {
+              "name": "sprEAttackBat_strip9_8",
+              "x": -12.0,
+              "y": -15.5,
+              "width": 24.0,
+              "height": 31.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "Knife",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprEWalkKnife_strip8.png",
+          "frames": [
+            {
+              "name": "sprEWalkKnife_strip8_0",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_1",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_2",
+              "x": -12.5,
+              "y": -13.0,
+              "width": 25.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_3",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_4",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_5",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_6",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEWalkKnife_strip8_7",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            }
+          ]
+        },
+        "attack": {
+          "texturePath": "Entity/Enemy/sprEAttackKnife_strip9.png",
+          "frames": [
+            {
+              "name": "sprEAttackKnife_strip9_0",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_1",
+              "x": -8.5,
+              "y": -12.0,
+              "width": 17.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_2",
+              "x": -8.5,
+              "y": -12.0,
+              "width": 17.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_3",
+              "x": -8.5,
+              "y": -12.0,
+              "width": 17.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_4",
+              "x": -13.0,
+              "y": -15.0,
+              "width": 26.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_5",
+              "x": -11.0,
+              "y": -21.0,
+              "width": 22.0,
+              "height": 42.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_6",
+              "x": -8.0,
+              "y": -21.0,
+              "width": 16.0,
+              "height": 42.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_7",
+              "x": -9.5,
+              "y": -19.5,
+              "width": 19.0,
+              "height": 39.0
+            },
+            {
+              "name": "sprEAttackKnife_strip9_8",
+              "x": -11.0,
+              "y": -15.0,
+              "width": 22.0,
+              "height": 30.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "Case",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprESubwayBriefcase.png",
+          "frames": [
+            {
+              "name": "sprESubwayBriefcase",
+              "x": -12.0,
+              "y": -12.0,
+              "width": 24.0,
+              "height": 24.0
+            }
+          ]
+        },
+        "attack": null
+      }
+    ]
+  }
+}

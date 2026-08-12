@@ -1,0 +1,213 @@
+{
+  "player": {
+    "dead": {
+      "texturePath": "Entity/Player/sprPBackEaten.png",
+      "rows": 1,
+      "columns": 1,
+      "frameCount": 1,
+      "frameTime": 0.1,
+      "scale": 2.0,
+      "loop": false
+    },
+    "finisher": {
+      "texturePath": "Entity/Player/sprPAttackBash_strip4.png",
+      "rows": 1,
+      "columns": 4,
+      "frameCount": 4,
+      "frameTime": 0.1,
+      "scale": 2.0,
+      "loop": false
+    },
+    "presets": [
+      {
+        "id": "Unarmed",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkUnarmed2_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackPunch_strip7.png",
+          "rows": 1,
+          "columns": 7,
+          "frameCount": 7,
+          "frameTime": 0.035,
+          "scale": 2.0,
+          "loop": false
+        }
+      },
+      {
+        "id": "Bat",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkBat_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackBat_strip9.png",
+          "rows": 1,
+          "columns": 9,
+          "frameCount": 9,
+          "frameTime": 0.035,
+          "scale": 2.0,
+          "loop": false
+        }
+      },
+      {
+        "id": "Knife",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkKnife_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackKnife_strip9.png",
+          "rows": 1,
+          "columns": 9,
+          "frameCount": 9,
+          "frameTime": 0.035,
+          "scale": 2.0,
+          "loop": false
+        }
+      },
+      {
+        "id": "Case",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkBag_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackBag_strip9.png",
+          "rows": 1,
+          "columns": 9,
+          "frameCount": 9,
+          "frameTime": 0.035,
+          "scale": 2.0,
+          "loop": false
+        }
+      }
+    ]
+  },
+
+  "mouse": {
+    "texturePath": "Entity/WorldObject/sprCursor_strip13.png",
+    "rows": 1,
+    "columns": 13,
+    "frameCount": 13,
+    "frameTime": 0.05,
+    "scale": 4.0,
+    "loop": true
+  },
+
+  "enemy": {
+    "dead": {
+      "texturePath": "Entity/Enemy/sprEAxeKill_strip4.png",
+      "rows": 1,
+      "columns": 4,
+      "frameCount": 4,
+      "frameTime": 0.1,
+      "scale": 2.0,
+      "loop": false
+    },
+
+    "presets": [
+      {
+        "id": "Unarmed",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprEWalkUnarmed_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": null
+      },
+
+      {
+        "id": "Bat",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprEWalkBat_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": {
+          "texturePath": "Entity/Enemy/sprEAttackBat_strip9.png",
+          "rows": 1,
+          "columns": 9,
+          "frameCount": 9,
+          "frameTime": 0.035,
+          "scale": 2.0,
+          "loop": false
+        }
+      },
+
+      {
+        "id": "Knife",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprEWalkKnife_strip8.png",
+          "rows": 1,
+          "columns": 8,
+          "frameCount": 8,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": {
+          "texturePath": "Entity/Enemy/sprEAttackKnife_strip9.png",
+          "rows": 1,
+          "columns": 9,
+          "frameCount": 9,
+          "frameTime": 0.035,
+          "scale": 2.0,
+          "loop": false
+        }
+      },
+
+      {
+        "id": "Case",
+        "walk": {
+          "texturePath": "Entity/Enemy/sprESubwayBriefcase.png",
+          "rows": 1,
+          "columns": 1,
+          "frameCount": 1,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": true
+        },
+        "attack": null,
+        "dead": {
+          "texturePath": "Entity/Enemy/sprESubwayDead_strip6.png",
+          "rows": 1,
+          "columns": 6,
+          "frameCount": 6,
+          "frameTime": 0.1,
+          "scale": 2.0,
+          "loop": false
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "player": {
+    "presets": [
+      {
+        "id": "Unarmed",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkUnarmed2_strip8.png",
+          "frames": [
+            {
+              "name": "sprPWalkUnarmed2_strip8_0",
+              "x": -7.5,
+              "y": -13.0,
+              "width": 15.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_1",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_2",
+              "x": -9.0,
+              "y": -12.0,
+              "width": 18.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_3",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_4",
+              "x": -7.5,
+              "y": -13.0,
+              "width": 15.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_5",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_6",
+              "x": -9.0,
+              "y": -12.0,
+              "width": 18.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPWalkUnarmed2_strip8_7",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            }
+          ]
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackPunch_strip7.png",
+          "frames": [
+            {
+              "name": "sprPAttackPunch_strip7_0",
+              "x": -8.0,
+              "y": -13.0,
+              "width": 16.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPAttackPunch_strip7_1",
+              "x": -9.0,
+              "y": -12.5,
+              "width": 18.0,
+              "height": 25.0
+            },
+            {
+              "name": "sprPAttackPunch_strip7_2",
+              "x": -16.5,
+              "y": -11.5,
+              "width": 33.0,
+              "height": 23.0
+            },
+            {
+              "name": "sprPAttackPunch_strip7_3",
+              "x": -16.5,
+              "y": -11.5,
+              "width": 33.0,
+              "height": 23.0
+            },
+            {
+              "name": "sprPAttackPunch_strip7_4",
+              "x": -16.5,
+              "y": -11.5,
+              "width": 33.0,
+              "height": 23.0
+            },
+            {
+              "name": "sprPAttackPunch_strip7_5",
+              "x": -11.5,
+              "y": -13.0,
+              "width": 23.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPAttackPunch_strip7_6",
+              "x": -10.0,
+              "y": -13.0,
+              "width": 20.0,
+              "height": 26.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "Bat",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkBat_strip8.png",
+          "frames": [
+            {
+              "name": "sprPWalkBat_strip8_0",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_1",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_2",
+              "x": -10.0,
+              "y": -15.0,
+              "width": 20.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_3",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_4",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_5",
+              "x": -8.0,
+              "y": -15.0,
+              "width": 16.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_6",
+              "x": -8.5,
+              "y": -15.0,
+              "width": 17.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPWalkBat_strip8_7",
+              "x": -8.0,
+              "y": -15.0,
+              "width": 16.0,
+              "height": 30.0
+            }
+          ]
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackBat_strip9.png",
+          "frames": [
+            {
+              "name": "sprPAttackBat_strip9_0",
+              "x": -9.5,
+              "y": -15.5,
+              "width": 19.0,
+              "height": 31.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_1",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_2",
+              "x": -12.0,
+              "y": -10.0,
+              "width": 24.0,
+              "height": 20.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_3",
+              "x": -12.0,
+              "y": -10.0,
+              "width": 24.0,
+              "height": 20.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_4",
+              "x": -9.0,
+              "y": -15.0,
+              "width": 18.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_5",
+              "x": -17.5,
+              "y": -12.5,
+              "width": 35.0,
+              "height": 25.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_6",
+              "x": -17.0,
+              "y": -15.0,
+              "width": 34.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_7",
+              "x": -12.5,
+              "y": -16.0,
+              "width": 25.0,
+              "height": 32.0
+            },
+            {
+              "name": "sprPAttackBat_strip9_8",
+              "x": -12.0,
+              "y": -15.5,
+              "width": 24.0,
+              "height": 31.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "Knife",
+        "walk": {
+          "texturePath": "Entity/Player/sprPWalkKnife_strip8.png",
+          "frames": [
+            {
+              "name": "sprPWalkKnife_strip8_0",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_1",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_2",
+              "x": -12.5,
+              "y": -13.0,
+              "width": 25.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_3",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_4",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_5",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_6",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkKnife_strip8_7",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            }
+          ]
+        },
+        "attack": {
+          "texturePath": "Entity/Player/sprPAttackKnife_strip9.png",
+          "frames": [
+            {
+              "name": "sprPAttackKnife_strip9_0",
+              "x": -12.0,
+              "y": -13.0,
+              "width": 24.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_1",
+              "x": -8.5,
+              "y": -12.0,
+              "width": 17.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_2",
+              "x": -8.5,
+              "y": -12.0,
+              "width": 17.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_3",
+              "x": -8.5,
+              "y": -12.0,
+              "width": 17.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_4",
+              "x": -13.0,
+              "y": -15.0,
+              "width": 26.0,
+              "height": 30.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_5",
+              "x": -11.0,
+              "y": -21.0,
+              "width": 22.0,
+              "height": 42.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_6",
+              "x": -8.0,
+              "y": -21.0,
+              "width": 16.0,
+              "height": 42.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_7",
+              "x": -9.5,
+              "y": -19.5,
+              "width": 19.0,
+              "height": 39.0
+            },
+            {
+              "name": "sprPAttackKnife_strip9_8",
+              "x": -11.0,
+              "y": -15.0,
+              "width": 22.0,
+              "height": 30.0
+            }
+          ]
+        }
+      },
+      {
+        "id": "Case",
+        "walk": {
+          "texturePath": "Entity/Player/sprPAttackBag_strip9.png",
+          "frames": [
+            {
+              "name": "sprPWalkBag_strip8_0",
+              "x": -9.0,
+              "y": -13.0,
+              "width": 18.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_1",
+              "x": -10.0,
+              "y": -13.0,
+              "width": 20.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_2",
+              "x": -10.0,
+              "y": -13.0,
+              "width": 20.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_3",
+              "x": -11.0,
+              "y": -12.0,
+              "width": 22.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_4",
+              "x": -9.0,
+              "y": -13.0,
+              "width": 18.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_5",
+              "x": -9.0,
+              "y": -13.0,
+              "width": 18.0,
+              "height": 26.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_6",
+              "x": -9.0,
+              "y": -12.0,
+              "width": 18.0,
+              "height": 24.0
+            },
+            {
+              "name": "sprPWalkBag_strip8_7",
+              "x": -9.0,
+              "y": -13.0,
+              "width": 18.0,
+              "height": 26.0
+            }
+          ]
+        },
+        "attack": null
+      }
+    ]
+  }
+}
