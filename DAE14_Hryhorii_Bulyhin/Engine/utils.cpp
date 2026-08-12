@@ -684,3 +684,106 @@ bool utils::IntersectRectLine(const Rectf& r, const Vector2f& p1, const Vector2f
 }
 
 #pragma endregion CollisionFunctionality
+
+#pragma region OwnDeclaration
+bool utils::IsOverlapping(const std::vector<Vector2f>& polygon, const Rectf& rect)
+{
+	// A collision can occur in three different ways:
+	// 1. A polygon vertex is inside the rectangle.
+	// 2. A rectangle vertex is inside the polygon.
+	// 3. An edge of the polygon intersects an edge of the rectangle.
+	Vector2f rectVertices[]
+	{
+		Vector2f {rect.left, rect.bottom},
+		Vector2f {rect.left + rect.width,rect.bottom},
+		Vector2f {rect.left + rect.width, rect.bottom + rect.height},
+		Vector2f {rect.left, rect.bottom + rect.height}
+	};
+	for (const Vector2f& p : polygon)
+	{
+		if (IsPointInRect(p, rect))
+		{
+			return true;
+		}
+	}
+	for (const Vector2f& p : rectVertices)
+	{
+		if (IsPointInPolygon(p, polygon))
+		{
+			return true;
+		}
+	}
+	float lambda1{},
+		lambda2{};
+
+	for (size_t i = 0; i < polygon.size(); ++i)
+	{
+		const Vector2f& a = polygon[i];
+		const Vector2f& b = polygon[(i + 1) % polygon.size()];
+
+		for (int j = 0; j < 4; ++j)
+		{
+			const Vector2f& c = rectVertices[j];
+			const Vector2f& d = rectVertices[(j + 1) % 4];
+
+			if (IntersectLineSegments(a, b, c, d, lambda1, lambda2))
+			{
+				if (lambda1 >= 0.f && lambda1 <= 1.f &&
+					lambda2 >= 0.f && lambda2 <= 1.f)
+				{
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+
+bool utils::IsOverlapping(const std::vector<Vector2f>& firstPolygon, const std::vector<Vector2f>& secondPolygon)
+{
+	// A vertex of the first polygon is inside the second
+	for (const Vector2f& point : firstPolygon)
+	{
+		if (IsPointInPolygon(point, secondPolygon))
+		{
+			return true;
+		}
+	}
+	// A vertex of the second polygon is inside the first
+	for (const Vector2f& point : secondPolygon)
+	{
+		if (IsPointInPolygon(point, firstPolygon))
+		{
+			return true;
+		}
+	}
+	// Edges intersect
+
+	float lambda1{},
+		lambda2{};
+
+	for (size_t firstIndex = 0; firstIndex < firstPolygon.size(); ++firstIndex)
+	{
+		const Vector2f& firstStart{ firstPolygon[firstIndex] };
+		const Vector2f& firstEnd{ firstPolygon[(firstIndex + 1) % firstPolygon.size()] };
+
+		for (size_t secondIndex = 0; secondIndex < secondPolygon.size(); ++secondIndex)
+		{
+			const Vector2f& secondStart{ secondPolygon[secondIndex] };
+			const Vector2f& secondEnd{ secondPolygon[(secondIndex + 1) % secondPolygon.size()] };
+
+			if (IntersectLineSegments(firstStart, firstEnd, secondStart, secondEnd, lambda1, lambda2))
+			{
+				if (lambda1 >= 0.f &&
+					lambda1 <= 1.f &&
+					lambda2 >= 0.f &&
+					lambda2 <= 1.f)
+				{
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+#pragma endregion OwnDeclaration

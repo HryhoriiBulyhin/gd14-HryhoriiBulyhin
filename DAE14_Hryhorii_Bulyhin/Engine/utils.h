@@ -83,4 +83,8 @@ namespace utils
 
 #pragma endregion CollisionFunctionality
 
+#pragma region OwnDeclaration
+	bool IsOverlapping(const std::vector<Vector2f>& polygon, const Rectf& rect);
+	bool IsOverlapping(const std::vector<Vector2f>& firstPolygon, const std::vector<Vector2f>& secondPolygon);
+#pragma endregion OwnDeclaration
 }
