@@ -160,21 +160,27 @@ xcopy "$(ProjectDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="HitBox.cpp" />
+    <ClCompile Include="JsonImporter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="WorldObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="HitBox.h" />
+    <ClInclude Include="JsonImporter.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="WorldObject.h" />
   </ItemGroup>
   <!-- Import the custom .targets file -->
   <Import Project="Prog2Game.targets" />
