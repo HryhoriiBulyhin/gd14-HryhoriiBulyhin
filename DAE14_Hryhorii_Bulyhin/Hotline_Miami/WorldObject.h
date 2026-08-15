@@ -11,6 +11,8 @@ public:
 	void SetPosition(const Vector2f& position);
 	const Vector2f& GetPosition() const;
 
+	void SetActive(bool isActive);
+	bool IsActive()const;
 private:
 	Vector2f m_Position{};
 	bool m_IsActive{};
