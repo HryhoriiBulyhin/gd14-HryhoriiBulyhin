@@ -160,26 +160,38 @@ xcopy "$(ProjectDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="HitBox.cpp" />
     <ClCompile Include="JsonImporter.cpp" />
+    <ClCompile Include="LevelPositioner.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="VisualConfigManager.cpp" />
+    <ClCompile Include="WeaponType.cpp" />
     <ClCompile Include="WorldObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="HitBox.h" />
     <ClInclude Include="JsonImporter.h" />
+    <ClInclude Include="LevelPositioner.h" />
+    <ClInclude Include="Mouse.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="VisualConfigManager.h" />
+    <ClInclude Include="WeaponType.h" />
     <ClInclude Include="WorldObject.h" />
   </ItemGroup>
   <!-- Import the custom .targets file -->

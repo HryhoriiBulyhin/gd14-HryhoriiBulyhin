@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-enum WeaponType
+enum class WeaponType
 {
 	Unarmed = 0,
 	Bat,

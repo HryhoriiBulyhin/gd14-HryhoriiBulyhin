@@ -34,3 +34,4 @@ private:
 	bool m_Loop{};
 	bool m_IsFinished{};
 };
+

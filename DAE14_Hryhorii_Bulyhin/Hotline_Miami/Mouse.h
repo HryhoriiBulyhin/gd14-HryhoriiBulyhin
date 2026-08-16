@@ -30,4 +30,3 @@ private:
 	Texture* m_pMouseTexture{};
 	float m_Scale{};
 };
-
