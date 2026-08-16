@@ -1,67 +1,35 @@
-#include "pch.h"
-#include "Sign.h"
-#include "Texture.h"
-#include "ResourceManager.h"
-Sign::Sign(const JsonImporter::SignInfo& signInfo, ResourceManager* pResources)
-	:
-	WorldObject{ signInfo.position },
-	m_SmoothSpeed{ 3.f },
-	m_SmoothDistance{ 4.f },
-	m_Scale{ 2.5f },
-	m_DrawPosition{ signInfo.position }
+#pragma once
+#include "WorldObject.h"
+#include "Animation.h"
+#include "JsonImporter.h"
+
+class Texture;
+class ResourceManager;
+
+class Sign final : public WorldObject
 {
-	std::string texturePath{ "Entity/WorldObject/sprGoArrow_strip4.png" };
-	int rows{ 1 },
-		cols{ 4 },
-		frameCount{ 4 };
-	float frameTime{ 0.12f };
+public:
+	explicit Sign(const JsonImporter::SignInfo& signInfo, ResourceManager* pResources);
 
-	m_pSignTexture = pResources->GetTexture(texturePath);
+	Sign(const Sign& other) = delete;
+	Sign& operator=(const Sign& other) = delete;
+	Sign(Sign&& other) = delete;
+	Sign& operator=(Sign&& other) = delete;
 
-	m_Animation = Animation
-	{
-		rows,
-		cols,
-		frameCount,
-		frameTime,
-		false
-	};
+	void Update(float elapsedSec)override;
+	void Draw()const override;
 
-	if (signInfo.subType == "LevelExit")
-	{
-		m_Animation.SetStartFrame(1);
-	}
-}
+private:
+	Texture* m_pSignTexture{};
 
-void Sign::Update(float elapsedSec)
-{
-	m_SmoothTime += elapsedSec;
+	Animation m_Animation{};
 
-	const float offsetY
-	{
-		static_cast<float>(std::sin(m_SmoothTime * m_SmoothSpeed) * m_SmoothDistance)
-	};
-	m_DrawPosition = Vector2f{ GetPosition().x, GetPosition().y + offsetY };
-}
+	Vector2f m_DrawPosition{};
 
-void Sign::Draw() const
-{
-	const float frameWidth{ m_pSignTexture->GetWidth() / static_cast<float>(m_Animation.GetColumns()) };
-	const float frameHeight{ m_pSignTexture->GetHeight() / static_cast<float>(m_Animation.GetRows()) };
+	float m_SmoothTime{},
+		m_SmoothSpeed{},
+		m_SmoothDistance{};
 
-	const Rectf srcRect
-	{
-		m_Animation.GetCurrentColumn() * frameWidth,
-		m_Animation.GetCurrentRow() * frameHeight,
-		frameWidth,
-		frameHeight
-	};
-	const Rectf dstRect
-	{
-		m_DrawPosition.x - frameWidth * m_Scale / 2.f,
-		m_DrawPosition.y - frameHeight * m_Scale / 2.f,
-		frameWidth * m_Scale,
-		frameHeight * m_Scale
-	};
-	m_pSignTexture->Draw(dstRect, srcRect);
-}
+	float m_Scale{};
+};
+
