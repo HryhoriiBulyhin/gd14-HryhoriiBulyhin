@@ -184,6 +184,7 @@ xcopy "$(ProjectDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Sign.cpp" />
     <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="VisualConfigManager.cpp" />
     <ClCompile Include="WeaponType.cpp" />
@@ -213,6 +214,7 @@ xcopy "$(ProjectDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Sign.h" />
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="VisualConfigManager.h" />
     <ClInclude Include="WeaponType.h" />
