@@ -165,6 +165,7 @@ xcopy "$(ProjectDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Door.cpp" />
+    <ClCompile Include="DroppedItem.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyNavigator.cpp" />
     <ClCompile Include="EnemyPatrol.cpp" />
@@ -190,6 +191,7 @@ xcopy "$(ProjectDir)Resources\*.*" "$(TargetDir)" /y /d /s</Command>
     <ClInclude Include="Car.h" />
     <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Door.h" />
+    <ClInclude Include="DroppedItem.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyNavigator.h" />
     <ClInclude Include="EnemyPatrol.h" />
