@@ -74,7 +74,7 @@ void Game::Cleanup()
 
 void Game::Update(float elapsedSec)
 {
-	/*FPS(elapsedSec);*/
+	FPS(elapsedSec);
 
 	Level* pLevel{ m_pLevelManager->GetLevel() };
 	Player* pPlayer{ m_pLevelManager->GetPlayer() };
