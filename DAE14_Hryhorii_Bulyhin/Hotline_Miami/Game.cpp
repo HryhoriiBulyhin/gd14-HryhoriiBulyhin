@@ -122,6 +122,7 @@ void Game::Draw() const
 
 	pLevel->Draw();
 
+	pLevel->DrawDroppedItems();
 	if (pPlayer->IsAlive())
 	{
 		for (Enemy* pEnemy : enemies)
@@ -141,8 +142,6 @@ void Game::Draw() const
 		}
 	}
 	
-	pLevel->DrawDroppedItems();
-
 	pLevel->DrawCar();
 	pLevel->DrawDoors();
 	m_pCamera->EndDraw();

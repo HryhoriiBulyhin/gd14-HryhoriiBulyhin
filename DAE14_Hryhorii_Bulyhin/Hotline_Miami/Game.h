@@ -3,15 +3,10 @@
 #include "JsonImporter.h"
 #include "VisualConfigManager.h"
 
-class Texture;
-class LevelPositioner;
-class Level;
-class Player;
 class ResourceManager;
 class Camera;
 class Mouse;
 class Enemy;
-class DroppedItem;
 class LevelManager;
 class GameSoundController;
 class Game : public BaseGame
