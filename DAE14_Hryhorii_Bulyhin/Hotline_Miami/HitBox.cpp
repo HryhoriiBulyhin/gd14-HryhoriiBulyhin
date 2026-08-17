@@ -5,10 +5,10 @@ HitBox::HitBox(const Rectf& localRect)
 	:
 	m_LocalRect{ localRect }
 {
-	const int m_AmountOfPoints{ 4 };
+	const int amountOfPoints{ 4 };
 
-	m_CurrentPoints.reserve(m_AmountOfPoints);
-	m_PreviousPoints.reserve(m_AmountOfPoints);
+	m_CurrentPoints.reserve(amountOfPoints);
+	m_PreviousPoints.reserve(amountOfPoints);
 }
 
 void HitBox::SetLocalRect(const Rectf& localRect)
@@ -18,7 +18,7 @@ void HitBox::SetLocalRect(const Rectf& localRect)
 
 void HitBox::Update(const Vector2f& center, float scale, float rotationAngle)
 {
-	const int m_AmountOfPoints{ 4 };
+	const int amountOfPoints{ 4 };
 
 	m_PreviousPoints = m_CurrentPoints;
 	m_CurrentPoints.clear();
@@ -28,7 +28,7 @@ void HitBox::Update(const Vector2f& center, float scale, float rotationAngle)
 	const float bottom{ m_LocalRect.bottom * scale };
 	const float top{ (m_LocalRect.bottom + m_LocalRect.height) * scale };
 
-	const Vector2f localPoints[m_AmountOfPoints]
+	const Vector2f localPoints[amountOfPoints]
 	{
 		Vector2f{left,bottom},
 		Vector2f{right,bottom},

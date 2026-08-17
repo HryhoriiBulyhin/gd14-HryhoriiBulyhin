@@ -80,7 +80,10 @@ void SoundManager::AddEffect(const std::string& name, const std::string& path)
 	{
 		pEffect->SetVolume(30);
 	}
-
+	else if(name == "enemy_pickup")
+	{
+		pEffect->SetVolume(30);
+	}
 	m_Effects.push_back(SoundEffectInfo{ name, pEffect });
 }
 

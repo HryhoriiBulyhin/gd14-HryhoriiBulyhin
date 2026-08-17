@@ -298,6 +298,7 @@ void Player::Hit()
 	SetFallDirection(hitDirection);
 
 	SetState(PlayerState::Dead);
+	SetAlive(false);
 
 	m_RotationAngle = GetFallAngle();
 

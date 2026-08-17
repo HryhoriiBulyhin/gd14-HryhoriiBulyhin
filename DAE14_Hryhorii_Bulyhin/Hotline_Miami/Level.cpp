@@ -303,6 +303,7 @@ void Level::DrawDoors() const
 	}
 }
 
+
 void Level::Update(float elapsedSec)
 {
 	UpdateEnemyWeaponDrops();

@@ -122,12 +122,26 @@ void Game::Draw() const
 
 	pLevel->Draw();
 
-	for (Enemy* pEnemy : enemies)
+	if (pPlayer->IsAlive())
 	{
-		pEnemy->Draw();
+		for (Enemy* pEnemy : enemies)
+		{
+			pEnemy->Draw();
+		}
+		pPlayer->Draw();
 	}
+	else
+	{
+		// Dead player
+		pPlayer->Draw();
+
+		for (Enemy* pEnemy : enemies)
+		{
+			pEnemy->Draw();
+		}
+	}
+	
 	pLevel->DrawDroppedItems();
-	pPlayer->Draw();
 
 	pLevel->DrawCar();
 	pLevel->DrawDoors();
