@@ -122,25 +122,25 @@ void Game::Draw() const
 
 	pLevel->Draw();
 
+	for (Enemy* pEnemy : enemies)
+	{
+		if (pEnemy->GetState() == Enemy::EnemyState::Stunned ||
+			pEnemy->GetState() == Enemy::EnemyState::Dead)
+		{
+			pEnemy->Draw();
+		}
+	}
 	pLevel->DrawDroppedItems();
-	if (pPlayer->IsAlive())
-	{
-		for (Enemy* pEnemy : enemies)
-		{
-			pEnemy->Draw();
-		}
-		pPlayer->Draw();
-	}
-	else
-	{
-		// Dead player
-		pPlayer->Draw();
 
-		for (Enemy* pEnemy : enemies)
+	for (Enemy* pEnemy : enemies)
+	{
+		if (pEnemy->GetState() != Enemy::EnemyState::Stunned &&
+			pEnemy->GetState() != Enemy::EnemyState::Dead)
 		{
 			pEnemy->Draw();
 		}
 	}
+	pPlayer->Draw();
 	
 	pLevel->DrawCar();
 	pLevel->DrawDoors();
