@@ -10,7 +10,7 @@ class ResourceManager;
 class Camera;
 class VisualConfigManager;
 
-class LevelManager
+class LevelManager final
 {
 public:
 	struct Level01State final

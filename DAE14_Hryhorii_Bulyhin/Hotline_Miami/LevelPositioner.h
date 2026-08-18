@@ -1,6 +1,6 @@
 #pragma once
 #include "JsonImporter.h"
-class LevelPositioner
+class LevelPositioner final
 {
 public:
 	LevelPositioner() = delete;

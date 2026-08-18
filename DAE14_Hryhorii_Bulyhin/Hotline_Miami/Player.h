@@ -10,7 +10,7 @@ class Texture;
 class Enemy;
 
 #pragma region PlayerData
-struct PlayerAnimationData
+struct PlayerAnimationData final
 {
 	Texture* pTexture{};
 
@@ -25,7 +25,7 @@ struct PlayerAnimationData
 
 	std::vector<JsonImporter::HitboxFrameInfo> hitBoxFrames{};
 };
-struct PlayerPresetData
+struct PlayerPresetData final
 {
 	PlayerAnimationData walk{};
 	PlayerAnimationData attack{};

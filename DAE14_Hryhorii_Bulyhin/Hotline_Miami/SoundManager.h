@@ -15,7 +15,7 @@ struct SoundStreamInfo
 	std::string name;
 	SoundStream* pStream;
 };
-class SoundManager
+class SoundManager final
 {
 public:
 	SoundManager();

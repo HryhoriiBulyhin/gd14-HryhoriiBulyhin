@@ -3,7 +3,7 @@
 #include "JsonImporter.h"
 class ResourceManager;
 class Texture;
-class Mouse
+class Mouse final
 {
 public:
 

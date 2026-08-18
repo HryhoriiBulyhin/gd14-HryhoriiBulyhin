@@ -15,7 +15,7 @@ struct TextureResource
 	TextureResource(const TextureResource& other) = delete;
 	TextureResource& operator=(const TextureResource& other) = delete;
 };
-class ResourceManager
+class ResourceManager final
 {
 public:
 	ResourceManager();
