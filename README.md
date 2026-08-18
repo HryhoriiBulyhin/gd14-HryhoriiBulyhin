@@ -116,9 +116,9 @@ Use the mouse to point and move in one direction or another.
 
 ### Controls
 * W, A, S, D - Move the player
-* RMB - Attack
+* LMB - Attack
 * E - Pick up a weapon
-* Space - Perform a finisher off on stunned enemy
+* Space - Perform a finisher off on stunned enemy(LMB hit)
 * R - Restart Current Level
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,10 +129,14 @@ Use the mouse to point and move in one direction or another.
 ## Class structure 
 
 ### Object composition 
-Game class owns and manages the main gameplay components "player,level,mouse cursor, resource manager, sound manage and level editor". The level class contains collections of world objects doors, waypoints, collision. Classes Player, Enemy, Door and Car contain pointers to other objects like textures, resource manager, sound manager and level itself.
+Entity contains HitBox objects for body and combat detection. Player and Enemy also contain Animation objects to manage their animations.
+Another example is EnemyNavigator, which contains a PathFinder.
 
 ### Inheritance 
-The character class is a base class for both Player and Enemy. It provides shared properties such as position... Derived classes implement their own gameplay logic. Enemy class is further extended by BriefcaseEnemy, which overrides virtual functions to provide unique behavior. It's also used through the abstract class WorldObject base class. Classes Door, Car, DroppedItem, Sign iherit from WorldObject and implement their own behavior.
+Player and Enemy inherit from the Entity base class. Entity provides functionality shared by both classes, such as position, velocity, body and combat hitboxes,
+active/alive states, and collision-related behaviour.
+Entity also has virtual functions, which are implemented by the derived classes.
+I also use the WorldObject base class for objects such as Door, Car, DroppedItem, and Sign.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,8 +177,10 @@ Project Link: [gd14-HryhoriiBulyhin](https://github.com/HowestDAE/gd14-HryhoriiB
 Use this space to list resources you find helpful and would like to give credit to. 
 
 * [Example 1: cpp reference on std::vector](https://en.cppreference.com/w/cpp/container/vector)
-* [SpriteSheet](https://www.dropbox.com/scl/fo/5h1i7fbnz9oc0gd86meaa/AOcQZMcmvk4GHjQppr6SEag?rlkey=ljao663e3smhpqvz5fmtixdrv&e=2&dl=0)
+* [Spritesheet](https://www.dropbox.com/scl/fo/5h1i7fbnz9oc0gd86meaa/AOcQZMcmvk4GHjQppr6SEag?rlkey=ljao663e3smhpqvz5fmtixdrv&e=2&dl=0)
 * [Lab07]
+* [JsonExporter](https://github.com/Marcel-Rei/Prog-2-Unity-JSON-Exporter)
+* [json.hpp](https://sourceforge.net/projects/json-for-modern-c.mirror/files/v3.11.1/json.hpp/download)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
