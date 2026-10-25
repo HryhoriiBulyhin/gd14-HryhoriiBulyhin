@@ -3,83 +3,30 @@
 #include "Texture.h"
 
 #include <iostream>
-ResourceManager::ResourceManager()
-{
-}
 
-ResourceManager::~ResourceManager()
-{
-	Clear();
-}
-
-ResourceManager::ResourceManager(ResourceManager&& other)
+TextureResource::TextureResource(const std::string& path, std::unique_ptr<Texture> pTexture)
 	:
-	m_Textures{ std::move(other.m_Textures) }
+	path{ path },
+	m_pTexture{std::move(pTexture)}
 {
-}
-
-ResourceManager& ResourceManager::operator=(ResourceManager&& other)
-{
-	if (this != &other)
-	{
-		Clear();
-
-		m_Textures = std::move(other.m_Textures);
-	}
-	return *this;
 }
 
 Texture* ResourceManager::GetTexture(const std::string& path)
 {
 	for (TextureResource& resource : m_Textures)
 	{
-		if (resource.path == path)
+		if(resource.path == path)
 		{
-			return resource.pTexture;
+			return resource.m_pTexture.get();
 		}
 	}
+	auto texture{ std::make_unique<Texture>(path) };
+	m_Textures.push_back(TextureResource{ path,std::move(texture)});
 
-	Texture* pTexture = new Texture{ path };
-	m_Textures.push_back(TextureResource{ path,pTexture });
-
-	return pTexture;
+	return m_Textures.back().m_pTexture.get();
 }
 
 void ResourceManager::Clear()
 {
-	for (TextureResource& resource : m_Textures)
-	{
-		delete resource.pTexture;
-		resource.pTexture = nullptr;
-	}
 	m_Textures.clear();
-}
-
-TextureResource::TextureResource(const std::string& path, Texture* pTexture)
-	:
-	path{ path },
-	pTexture{ pTexture }
-{
-}
-
-TextureResource::TextureResource(TextureResource&& other)
-	:
-	path{ std::move(other.path) },
-	pTexture{ other.pTexture }
-{
-	other.pTexture = nullptr;
-}
-
-TextureResource& TextureResource::operator=(TextureResource&& other)
-{
-	if (this != &other)
-	{
-		delete pTexture;
-
-		path = std::move(other.path);
-		pTexture = other.pTexture;
-
-		other.pTexture = nullptr;
-	}
-	return *this;
 }
