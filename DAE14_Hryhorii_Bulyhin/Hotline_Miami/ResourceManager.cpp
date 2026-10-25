@@ -15,7 +15,7 @@ Texture* ResourceManager::GetTexture(const std::string& path)
 {
 	for (TextureResource& resource : m_Textures)
 	{
-		if(resource.path == path)
+		if (resource.path == path)
 		{
 			return resource.m_pTexture.get();
 		}
